@@ -1,9 +1,18 @@
 function isPalindrome(word) {
-  // Write your algorithm here
+  let palindrome = ""
+  for (let i = word.length - 1; i >= 0; i--) {
+    palindrome += word[i];
+  }
+  if (palindrome === word) {
+    return true
+  } else {
+    return false
+  }
 }
 
 /* 
-  Add your pseudocode here
+  the start of the for loop represents the last letter (last index value) of the word, word.length -1
+  It continues adding each index of the word until it gets to the end, having reversed the string
 */
 
 /*
